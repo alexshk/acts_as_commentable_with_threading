@@ -4,7 +4,7 @@ require 'logger'
 
 plugin_test_dir = File.dirname(__FILE__)
 
-ActiveRecord::Base.logger = Logger.new(File.join(plugin_test_dir, 'debug.log'))
+ActiveRecord::Base.logger = ::Logger.new(File.join(plugin_test_dir, 'debug.log'))
 
 ActiveRecord::Base.configurations =
   YAML.load_file(File.join(plugin_test_dir, 'db', 'database.yml'))

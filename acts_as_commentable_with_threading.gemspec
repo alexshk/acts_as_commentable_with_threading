@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec', '>= 3.0'
   s.add_development_dependency 'rails', '~> 6.1'
 
-  s.add_dependency 'activerecord', '~> 6.1'
-  s.add_dependency 'activesupport', '~> 6.1'
+  s.add_dependency 'activerecord', ">= 6.0", "< 7.0"
+  s.add_dependency "activesupport", ">= 6.0", "< 7.0"
   s.add_dependency 'awesome_nested_set', '>= 3.0'
 end
